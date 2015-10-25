@@ -42,8 +42,7 @@ Long count = Db.queryLong("select count(*) from table where id in (*)", 1, 2, 3,
 	1. [jfinal：极简J2EE开发框架][2]
 	2. [Google gson][3]
 2. 构建得到jar或直接添加.java文件到项目中
->`ant build.xml`
-3. 看看样例[Test.java][1]
+3. 看看样例[Sample.java][1]
 
 
 ##SAMPLE:样例
@@ -113,6 +112,6 @@ Long count = Db.queryLong("select count(*) from table where id in (*)", 1, 2, 3,
 >整一大堆常用的Formattable，你值得拥有
 
 
-[1]:https://github.com/glaciall/jfinal-dbx
+[1]:https://github.com/glaciall/jfinal-dbx/blob/master/jfinal-dbx/src/cn/org/hentai/xfinal/testcase/Sample.java
 [2]:https://www.jfinal.com/
 [3]:https://github.com/google/gson
