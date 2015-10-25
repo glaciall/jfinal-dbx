@@ -79,7 +79,7 @@ Long count = Db.queryLong("select count(*) from table where id in (*)", 1, 2, 3,
     9		hunan
     10		hubei
     ```
-2. 测试代码：[Test.java][1]
+2. 测试代码：[Sample.java][1]
 3. 测试代码的输出JSON
 ```json
 [
