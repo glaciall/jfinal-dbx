@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Users:</h3>
+<#list users as item>
+<hr />
+id: ${item.id}<br/>
+name: ${item.name}<br/>
+reg time: ${item.fmt_reg_time}<br/>
+friends: 
+	<#list item.friends as friend>
+	<a href="?${friend.friend_id}">${friend.friend_name}</a>、
+	</#list>
+<hr/>
+</#list>
+</body>
+</html>
