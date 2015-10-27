@@ -113,5 +113,5 @@ Long count = Db.queryLong("select count(*) from table where id in (*)", 1, 2, 3,
 
 
 [1]:https://github.com/glaciall/jfinal-dbx/blob/master/jfinal-dbx/src/cn/org/hentai/xfinal/testcase/Sample.java
-[2]:https://www.jfinal.com/
+[2]:http://www.jfinal.com/
 [3]:https://github.com/google/gson
