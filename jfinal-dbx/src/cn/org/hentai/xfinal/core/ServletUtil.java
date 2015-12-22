@@ -12,17 +12,7 @@ public class ServletUtil
 {
     public static String getString(HttpServletRequest request, String name) throws RuntimeException
     {
-        String val = request.getParameter(name);
-        if (null == val) return val;
-        try
-        {
-        	val = new String(val.getBytes("ISO-8859-1"), "UTF-8");
-        }
-        catch(UnsupportedEncodingException ex)
-        {
-        	// ...
-        }
-        return val;
+        return request.getParameter(name);
     }
 	
     public static HashMap<String, String> getParametersMap(HttpServletRequest request) throws RuntimeException
@@ -85,7 +75,7 @@ public class ServletUtil
 	
 	            for (int i = 0; i < vals.length; i++)
 	            {
-	                value = new String(vals[i].getBytes("ISO-8859-1"), "UTF-8");
+	                value = vals[i];
 	                if (name.equals(key)) { value = val; exists = true; }
 	                url += key + "=" + java.net.URLEncoder.encode(value, "UTF-8") + "&";
 	            }
